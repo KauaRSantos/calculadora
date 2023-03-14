@@ -1,0 +1,111 @@
+@charset "utf-9";
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+     font-family: 'Playfair Display', serif;
+    
+}
+
+
+
+
+body{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,0,122,1) 50%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+#calculator{
+    max-width: 360px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .9) ;
+    
+}
+
+#display{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 3px;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+.equal{
+    width: calc(50% - 10px);
+}
+
+button{
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    box-shadow: -1px 1px 10px black;
+}
+
+#ac {
+    background-color:  rgb(18, 96, 163) ;
+    color: black;
+}
+#de {
+    background-color: rgb(18, 96, 163) ;
+    color: black;
+}
+.idk {
+    background-color: rgb(18, 96, 163) ;
+    color: black;
+}
+
+
+.operator {
+    color: black;
+    background-color: gray ;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+footer{
+
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    text-align: center;
+    padding: 15px ;
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
